@@ -1,0 +1,25 @@
+{
+    "devDependencies": {
+        "@types/core-js": "^2.5.5",
+        "@types/eslint": "^8.4.6",
+        "@types/raf": "^3.4.0",
+        "@typescript-eslint/eslint-plugin": "^5.38.1",
+        "@typescript-eslint/parser": "^5.38.1",
+        "eslint": "^8.24.0",
+        "typesync": "^0.9.2"
+    },
+    "scripts": {
+        "preinstall": "typesync",
+        "dev-server": "cd server && npm run dev",
+        "dev-server-test": "cd server && npm run test",
+        "lint-server": "cd server && npm run lint",
+        "dev-frontend": "cd frontend && npm run dev",
+        "dev-frontend-test": "cd frontend && npm run test"
+    },
+    "dependencies": {
+        "core-js": "^3.25.3",
+        "raf": "^3.4.1",
+        "whatwg-fetch": "^3.6.2",
+        "winston": "^3.8.2"
+    }
+}
