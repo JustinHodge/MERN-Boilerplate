@@ -1,10 +1,13 @@
+import Content from './content/Content';
+import Footer from './footer/Footer';
 import Header from './header/Header';
 
 export const App = () => {
     return (
         <div>
             <Header />
-            <div>Hello World</div>
+            <Content />
+            <Footer />
         </div>
     );
 };
