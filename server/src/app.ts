@@ -9,11 +9,11 @@ dotenv.config({ path: './config.env' });
 const app = express();
 const database = new Database();
 
-// try {
-//     database.connectDB();
-// } catch (error) {
-//     console.log(error);
-// }
+try {
+    database.connectDB();
+} catch (error) {
+    console.log(error);
+}
 
 app.use(routes);
 

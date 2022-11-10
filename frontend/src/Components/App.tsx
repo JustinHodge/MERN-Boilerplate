@@ -1,7 +1,6 @@
-import { Button, ButtonGroup, useColorMode } from '@chakra-ui/react';
-import Header from './header/header';
+import Header from './header/Header';
+
 export const App = () => {
-    const { colorMode, toggleColorMode } = useColorMode();
     return (
         <div>
             <Header />
