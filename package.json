@@ -14,9 +14,11 @@
         "dev-server-test": "cd server && npm run test",
         "lint-server": "cd server && npm run lint",
         "dev-frontend": "cd frontend && npm run dev",
-        "dev-frontend-test": "cd frontend && npm run test"
+        "dev-frontend-test": "cd frontend && npm run test",
+        "dev": "concurrently npm:dev-frontend npm:dev-server"
     },
     "dependencies": {
+        "concurrently": "^7.5.0",
         "core-js": "^3.25.3",
         "raf": "^3.4.1",
         "whatwg-fetch": "^3.6.2",
