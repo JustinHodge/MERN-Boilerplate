@@ -8,6 +8,8 @@ import 'raf/polyfill';
 import 'whatwg-fetch';
 
 import App from './Components/App';
+import { ChakraProvider, ColorModeScript } from '@chakra-ui/react';
+import chakraTheme from './chakraTheme';
 
 const rootElement = document.getElementById('app-root');
 
@@ -15,8 +17,13 @@ if (rootElement) {
     const root = ReactDOM.createRoot(rootElement);
 
     root.render(
-        <React.StrictMode>
-            <App />
-        </React.StrictMode>
+        <ChakraProvider>
+            <ColorModeScript
+                initialColorMode={chakraTheme.config.initialColorMode}
+            />
+            <React.StrictMode>
+                <App />
+            </React.StrictMode>
+        </ChakraProvider>
     );
 }
